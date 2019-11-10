@@ -1,7 +1,7 @@
 
 # pre-commit-kotlin
 
-golang hooks for [http://pre-commit.com/](http://pre-commit.com/)
+Kotlin hooks for [http://pre-commit.com/](http://pre-commit.com/)
 
 ## Using these hooks
 
