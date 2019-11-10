@@ -1,0 +1,6 @@
+- id: ktlint
+  name: ktlint
+  description: An anti-bikeshedding Kotlin linter with built-in formatter 
+  entry: ./scripts/ktlint.sh
+  language: script
+  files: \.kt(s)?$
