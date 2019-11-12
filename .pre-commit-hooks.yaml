@@ -1,6 +1,30 @@
 - id: ktlint
   name: ktlint
-  description: An anti-bikeshedding Kotlin linter with built-in formatter 
+  description: Runs ktlint
   entry: ./scripts/ktlint.sh
   language: script
   files: \.kt(s)?$
+
+- id: mvn-validate
+  name: mvn validate
+  description: Validates the project is correct and all necessary information is available
+  entry: ./scripts/mvn.sh clean validate
+  language: script
+
+- id: mvn-compile
+  name: mvn compile
+  description: Compiles the source code of the project
+  entry: ./scripts/mvn.sh clean compile
+  language: script
+
+- id: mvn-test
+  name: mvn test
+  description: Tests the compiled source code using a suitable unit testing framework. These tests should not require the code be packaged or deployed
+  entry: ./scripts/mvn.sh clean test
+  language: script
+
+- id: mvn-verify
+  name: mvn verify
+  description: Runs any checks on results of integration tests to ensure quality criteria are met
+  entry: ./scripts/mvn.sh clean verify
+  language: script
