@@ -8,7 +8,7 @@
 - id: mvn-validate
   name: mvn validate
   description: Validates the project is correct and all necessary information is available
-  entry: ./scripts/mvn.sh clean validate
+  entry: ./scripts/mvn.sh validate
   language: script
 
 - id: mvn-compile
@@ -20,7 +20,7 @@
 - id: mvn-test
   name: mvn test
   description: Tests the compiled source code using a suitable unit testing framework. These tests should not require the code be packaged or deployed
-  entry: ./scripts/mvn.sh clean test
+  entry: ./scripts/mvn.sh test
   language: script
 
 - id: mvn-verify
